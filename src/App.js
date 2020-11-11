@@ -10,6 +10,7 @@ function App(props) {
                 props.decrement()
             }}>decrement
             </button>
+            <button className={`${s.btn_zero}`} onClick={()=>{props.zeroValue()}}>zero value</button>
             <button className={`${s.btn_plus}`} onClick={() => {
                 props.increment()
             }}>increment

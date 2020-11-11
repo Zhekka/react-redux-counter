@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import {decrementAC, incrementAC} from "./redux/main-reducer";
+import {decrementAC, incrementAC, zeroValueAC} from "./redux/main-reducer";
 import App from "./App";
 
 
@@ -16,6 +16,9 @@ let mapDispatchToProps = (dispatch) => {
         },
         decrement: () => {
             dispatch(decrementAC())
+        },
+        zeroValue:()=>{
+            dispatch(zeroValueAC())
         }
     }
 }
